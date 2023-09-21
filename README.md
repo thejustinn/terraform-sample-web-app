@@ -9,6 +9,10 @@ https://docs.google.com/presentation/d/18fz_6QWkCfstpJJ5sWUNC9-kGX1twYViy6NZdu6x
 ## Deployment Video
 #### https://youtu.be/o7CgmprTe2U
 
+## Deployment Requirements
+* [Terraform](https://developer.hashicorp.com/terraform/downloads?product_intent=terraform) installed
+* [AWS CLI](https://aws.amazon.com/cli/) installed and running `aws configure` to associate your AWS credentials. 
+
 ## Deployment steps
 1. Change directory into `./simple-webapp`
 2. Run `terraform init`
