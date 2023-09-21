@@ -1,9 +1,9 @@
 variable "vpc_id" {
-    type = string
+  type = string
 }
 
 variable "subnet_cidr_block" {
-    type = string
+  type = string
 }
 
 variable "availability_zone" {
@@ -15,5 +15,5 @@ variable "igw_id" {
 }
 
 variable "tagging" {
-    type = string
+  type = string
 }

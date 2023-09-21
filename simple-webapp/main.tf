@@ -58,7 +58,7 @@ module "webapp_public_subnet_1b" {
 }
 
 module "webapp_asg" {
-  source         = "../module-lb-asg"
+  source         = "../module-webapp"
   vpc_id         = module.webapp_vpc.vpc_id
   vpc_cidr_block = var.vpc_cidr_block
 
