@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.16"
+      version = "~> 5.17.0"
     }
   }
 
@@ -57,7 +57,7 @@ module "webapp_public_subnet_1b" {
 
 }
 
-module "webapp_asg" {
+module "webapp" {
   source         = "../module-webapp"
   vpc_id         = module.webapp_vpc.vpc_id
   vpc_cidr_block = var.vpc_cidr_block
@@ -71,6 +71,4 @@ module "webapp_asg" {
   public_subnet_1b_id  = module.webapp_public_subnet_1b.subnet_id
 
   alb_tagging = var.alb_tagging
-
 }
-
